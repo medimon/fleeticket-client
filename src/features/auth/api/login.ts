@@ -17,7 +17,7 @@ export const loginWithEmailAndPassword = (
       `/api/login/`,
       { username: data.username, password: data.password },
       {
-        // withCredentials: true,
+        withCredentials: true,
         headers: {
           "x-csrftoken": getCookieValue("csrftoken"),
         },
